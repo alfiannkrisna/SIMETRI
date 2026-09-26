@@ -1,0 +1,63 @@
+/* *{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* body{
+    text-align: center;
+
+    font-family: "Poppins", sans-serif;
+} */
+
+/* header{
+    color: white;
+
+    background-color: blue;
+    padding: 48px 24px;
+} */
+
+/* header h1{
+    font-weight: bold;
+    font-size: 36px;
+} */
+
+/* section{
+    padding: 48px 24px;
+} */
+
+/* section h2{
+    color: blue;
+    margin-bottom: 8px;
+} */
+
+/* section p{
+    color: gray;
+} */
+
+/* .section-putih{
+    background-color: white;
+}
+
+.section-biru{
+    background-color: aliceblue; 
+}
+
+section li{
+    color: gray;
+} */
+
+/* ul li::before{
+    content: ' → ';
+    color: blue;
+} */
+
+/* ul li{
+    list-style-type: none;
+}
+
+footer{
+    padding: 48px 24px;
+    color: white;
+    background-color: rgb(0, 0, 44);
+} */
