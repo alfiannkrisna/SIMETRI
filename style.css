@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=Crimson+Text:wght@600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Crimson Text", Georgia, serif;
+}
+
+/* BACKGROUND HERO */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-background {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* LOGO KIRI ATAS */
+.hero-logo {
+  position: absolute;
+  top: 13.5%;
+  left: 10%;
+
+  display: grid;
+  place-items: center;
+
+  width: 48px;
+  height: 48px;
+
+  border: 6px solid #343536;
+  border-radius: 50% 50% 50% 0;
+  background-color: #7183a8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* POSISI TEKS DAN TOMBOL */
+.hero-content {
+  width: min(92%, 680px);
+  margin: 0 auto;
+  position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translateX(-50%);
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+/* JUDUL */
+.hero-title {
+  color: #fffaf0;
+  font-family: "Cinzel", Georgia, serif;
+  font-size: clamp(60px, 11vw, 100px);
+  font-weight: 900;
+  letter-spacing: -5px;
+  line-height: 1.1;
+
+  -webkit-text-stroke: 1.5px #783c20;
+  paint-order: stroke fill;
+
+  text-shadow:
+    1px 1px 0 #783c20,
+    2px 2px 0 #783c20,
+    3px 3px 0 #783c20,
+    4px 4px 0 #783c20,
+    5px 6px 0 #783c20;
+}
+
+/* SUBTITLE DENGAN GAMBAR GULUNGAN */
+.hero-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: min(100%, 420px);
+  min-height: 38px;
+  margin: 10px auto 0;
+  padding: 6px 20px;
+
+  /* Gambar satu folder dengan style.css */
+  background-image: url("./hero/roll.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  color: #824124;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* SUSUNAN TOMBOL */
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 18px;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 166px;
+  min-height: 34px;
+  padding: 7px 16px;
+
+  border: 1px solid;
+  border-radius: 9px;
+
+  color: #fffaf0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+
+  transition: transform 150ms ease, filter 150ms ease;
+}
+
+/* TOMBOL ORANYE */
+.hero-button--explore {
+  border-color: #d87421;
+  background: linear-gradient(#ef8a46, #ffa84d);
+  box-shadow: 0 5px 0 #94451b;
+}
+
+/* TOMBOL HIJAU */
+.hero-button--lore {
+  border-color: #24574d;
+  background: linear-gradient(#52b4b4, #65b9a4);
+  box-shadow: 0 5px 0 #24574d;
+}
+
+.hero-button:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
+.hero-button:active {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+.hero-button:focus-visible,
+.hero-logo:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 6px;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 480px) {
+  .hero-logo {
+    top: 32px;
+    left: 24px;
+  }
+
+  .hero-content {
+    padding-top: 28vh;
+  }
+
+  .hero-title {
+    font-size: clamp(44px, 15vw, 72px);
+    letter-spacing: -3px;
+  }
+
+  .hero-subtitle {
+    padding: 9px 18px;
+    font-size: 16px;
+  }
+
+  .hero-actions {
+    gap: 14px;
+  }
+
+  .hero-button {
+    width: 145px;
+    max-width: calc(50% - 7px);
+    font-size: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-button {
+    transition: none;
+  }
+}
