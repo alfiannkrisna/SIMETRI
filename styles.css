@@ -61,3 +61,10 @@ footer{
     color: white;
     background-color: rgb(0, 0, 44);
 } */
+
+@font-face {
+  font-family: 'The Wild Breath of Zelda';
+  src: url('fonts/TheWildBreathofZelda.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
