@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentasi</title>
+
+    <link href="https://fonts.cdnfonts.com/css/the-wild-breath-of-zelda" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="relative w-full overflow-hidden">
+        <!-- Background -->
+        <img src="images/homepage/mobile/bg-dokumentasi.svg" alt="" class="block w-full h-auto md:hidden">
+        <img src="images/homepage/desktop/bg-dokumentasi.svg" alt="" class="hidden w-full h-auto md:block">
+
+        <!-- Konten -->
+        <div class="absolute inset-0 flex flex-col items-center">
+
+            <!-- Judul -->
+            <h1 style="font-family: 'The Wild Breath of Zelda';"
+                class="relative z-[4] mt-[6%] -mb-[3%] text-center text-white text-[13vw] md:text-[80px] leading-none drop-shadow-[0_6px_0_#7A3D21]">
+                DOKUMENTASI
+            </h1>
+
+            <!-- Kertas + carousel -->
+            <div class="relative w-full flex-1 gap-5 md:flex-none">
+                <img src="images/homepage/mobile/kertas-dokumentasi.png" alt="Kertas Dokumentasi"
+                    class="block w-full h-auto md:hidden">
+
+                <!-- Overlay isi kertas -->
+                <div class="absolute inset-0 z-[2] flex flex-col items-center justify-center px-[13%] md:static md:px-0">
+
+                    <!-- Viewport carousel -->
+                    <div class="w-full md:max-w-3xl overflow-hidden aspect-[3/2] shadow-md">
+                        <div id="track" class="flex h-full transition-transform duration-500 ease-in-out">
+                            <div class="min-w-full h-full">
+                                <img src="images/homepage/dokumentasi/foto-1.jpg" alt="Dokumentasi 1"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="images/homepage/dokumentasi/foto-2.jpg" alt="Dokumentasi 2"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="images/homepage/dokumentasi/foto-3.jpg" alt="Dokumentasi 3"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="images/homepage/dokumentasi/foto-4.jpg" alt="Dokumentasi 4"
+                                    class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kontrol -->
+                    <div class="relative z-[3] flex items-center justify-center gap-4 mt-[12%] md:mt-6">
+                        <button id="prevMobile" aria-label="Sebelumnya"
+                            class="text-[#7A3D21] text-3xl font-bold leading-none">
+                            &#10094;
+                        </button>
+                        <div id="carouselDots" class="flex items-center gap-2"></div>
+                        <button id="nextMobile" aria-label="Berikutnya"
+                            class="text-[#7A3D21] text-3xl font-bold leading-none">
+                            &#10095;
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        const track = document.getElementById("track");
+        const slides = track.children;
+        const dots = document.getElementById("carouselDots");
+        const totalSlide = slides.length;
+        let currentSlide = 0;
+
+        for (let i = 0; i < totalSlide; i++) {
+            const dot = document.createElement("button");
+            dot.setAttribute("aria-label", "Slide " + (i + 1));
+            dot.classList.add("h-3", "w-3", "rounded-full", "bg-[#C07E4E]", "transition-all", "duration-300");
+            dot.addEventListener("click", () => goToSlide(i));
+            dots.appendChild(dot);
+        }
+
+        function updateDots() {
+            [...dots.children].forEach((dot, i) => {
+                if (i === currentSlide) {
+                    dot.classList.add("bg-[#7A3D21]", "w-8");
+                    dot.classList.remove("bg-[#C07E4E]", "w-3");
+                } else {
+                    dot.classList.add("bg-[#C07E4E]", "w-3");
+                    dot.classList.remove("bg-[#7A3D21]", "w-8");
+                }
+            });
+        }
+
+        function goToSlide(index) {
+            currentSlide = (index + totalSlide) % totalSlide;
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+            updateDots();
+        }
+
+        document.getElementById("prevMobile").addEventListener("click", () => goToSlide(currentSlide - 1));
+        document.getElementById("nextMobile").addEventListener("click", () => goToSlide(currentSlide + 1));
+
+        goToSlide(0);
+    </script>
+</body>
+
+</html>
