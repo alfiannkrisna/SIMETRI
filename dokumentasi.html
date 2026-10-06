@@ -12,103 +12,139 @@
 
 <body>
     <section class="relative w-full overflow-hidden">
-        <!-- Background -->
         <img src="images/homepage/mobile/bg-dokumentasi.svg" alt="" class="block w-full h-auto md:hidden">
         <img src="images/homepage/desktop/bg-dokumentasi.svg" alt="" class="hidden w-full h-auto md:block">
 
-        <!-- Konten -->
-        <div class="absolute inset-0 flex flex-col items-center">
+        <div class="absolute inset-0 md:translate-y-[5%]">
 
-            <!-- Judul -->
-            <h1 style="font-family: 'The Wild Breath of Zelda';"
-                class="relative z-[4] mt-[6%] -mb-[3%] text-center text-white text-[13vw] md:text-[80px] leading-none drop-shadow-[0_6px_0_#7A3D21]">
-                DOKUMENTASI
-            </h1>
+            <img src="images/homepage/desktop/kertas-dokumentasi.png" alt="Kertas Dokumentasi"
+                class="hidden md:block absolute left-1/2 -translate-x-1/2 top-[17%] w-[96%] h-auto z-[1]">
 
-            <!-- Kertas + carousel -->
-            <div class="relative w-full flex-1 gap-5 md:flex-none">
-                <img src="images/homepage/mobile/kertas-dokumentasi.png" alt="Kertas Dokumentasi"
-                    class="block w-full h-auto md:hidden">
+            <div class="absolute inset-0 flex flex-col items-center md:block">
 
-                <!-- Overlay isi kertas -->
-                <div class="absolute inset-0 z-[2] flex flex-col items-center justify-center px-[13%] md:static md:px-0">
+                <h1 style="font-family: 'The Wild Breath of Zelda';"
+                    class="relative z-[4] mt-[48px] -mb-[3%] text-center text-white text-[60px] leading-none drop-shadow-[0_6px_0_#7A3D21]
+                           md:absolute md:inset-x-0 md:top-[27%] md:m-0 md:text-[80px] md:drop-shadow-[0_6px_0_#7A3D21]">
+                    DOKUMENTASI
+                </h1>
 
-                    <!-- Viewport carousel -->
-                    <div class="w-full md:max-w-3xl overflow-hidden aspect-[3/2] shadow-md">
-                        <div id="track" class="flex h-full transition-transform duration-500 ease-in-out">
-                            <div class="min-w-full h-full">
-                                <img src="images\homepage\dokumentasi\Salinan A6600008.JPG" alt="Dokumentasi 1"
-                                    class="w-full h-full object-cover">
-                            </div>
-                            <div class="min-w-full h-full">
-                                <img src="images\homepage\dokumentasi\Salinan DSCF0008.JPG" alt="Dokumentasi 2"
-                                    class="w-full h-full object-cover">
-                            </div>
-                            <div class="min-w-full h-full">
-                                <img src="images\homepage\dokumentasi\Salinan DSCF0054.JPG" alt="Dokumentasi 3"
-                                    class="w-full h-full object-cover">
-                            </div>
-                            <div class="min-w-full h-full">
-                                <img src="images\homepage\dokumentasi\Salinan IMG_7849.heic" alt="Dokumentasi 4"
-                                    class="w-full h-full object-cover">
+                <div class="relative w-full flex-1 md:static md:flex-none mt-5">
+                    <img src="images/homepage/mobile/kertas-dokumentasi.png" alt="Kertas Dokumentasi"
+                        class="block w-full h-auto md:hidden gap-10">
+
+                    <div class="absolute inset-0 z-[2] flex flex-col items-center justify-center px-[13%]
+                                md:static md:block md:px-0">
+
+                        <div class="w-full overflow-hidden
+                                    md:absolute md:left-[17%] md:right-[17%] md:top-[41%] md:w-auto md:z-[2]">
+                            <div id="track" class="flex transition-transform duration-500 ease-in-out">
+                                <div class="min-w-full md:min-w-[50%] md:px-[1%]">
+                                    <div class="aspect-[3/2] overflow-hidden shadow-md">
+                                        <img src="images/homepage/dokumentasi/Salinan DSCF0054.JPG" alt="Dokumentasi 1"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <div class="min-w-full md:min-w-[50%] md:px-[1%]">
+                                    <div class="aspect-[3/2] overflow-hidden shadow-md">
+                                        <img src="images/homepage/dokumentasi/Salinan DSCF0008.JPG" alt="Dokumentasi 2"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <div class="min-w-full md:min-w-[50%] md:px-[1%]">
+                                    <div class="aspect-[3/2] overflow-hidden shadow-md">
+                                        <img src="images/homepage/dokumentasi/Salinan A6600008.JPG" alt="Dokumentasi 3"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <div class="min-w-full md:min-w-[50%] md:px-[1%]">
+                                    <div class="aspect-[3/2] overflow-hidden shadow-md">
+                                        <img src="images/homepage/dokumentasi/Foto4.jpeg" alt="Dokumentasi 4"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Kontrol -->
-                    <div class="relative z-[3] flex items-center justify-center gap-4 mt-[12%] md:mt-6">
-                        <button id="prevMobile" aria-label="Sebelumnya"
-                            class="text-[#7A3D21] text-3xl font-bold leading-none">
-                            &#10094;
-                        </button>
-                        <div id="carouselDots" class="flex items-center gap-2"></div>
-                        <button id="nextMobile" aria-label="Berikutnya"
-                            class="text-[#7A3D21] text-3xl font-bold leading-none">
-                            &#10095;
-                        </button>
+                        <!-- Kontrol (desktop: panah kiri/kanan + dots di bawah foto) -->
+                        <div class="relative z-[3] flex items-center justify-center gap-4 mt-[12%] md:contents">
+                            <button id="prevMobile" aria-label="Sebelumnya"
+                                class="text-[#7A3D21] text-3xl font-bold leading-none
+                                       md:absolute md:left-[11%] md:top-[57%] md:-translate-y-1/2 md:text-[3vw] md:z-[3]">
+                                &#10094;
+                            </button>
+
+                            <div id="carouselDots"
+                                class="flex items-center gap-2
+                                       md:absolute md:left-1/2 md:top-[77%] md:-translate-x-1/2 md:z-[3]"></div>
+
+                            <button id="nextMobile" aria-label="Berikutnya"
+                                class="text-[#7A3D21] text-3xl font-bold leading-none
+                                       md:absolute md:right-[11%] md:top-[57%] md:-translate-y-1/2 md:text-[3vw] md:z-[3]">
+                                &#10095;
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </section>
 
     <script>
         const track = document.getElementById("track");
-        const slides = track.children;
         const dots = document.getElementById("carouselDots");
-        const totalSlide = slides.length;
+        const totalSlide = track.children.length;
+        const desktopQuery = window.matchMedia("(min-width: 768px)");
         let currentSlide = 0;
 
-        for (let i = 0; i < totalSlide; i++) {
-            const dot = document.createElement("button");
-            dot.setAttribute("aria-label", "Slide " + (i + 1));
-            dot.classList.add("h-3", "w-3", "rounded-full", "bg-[#C07E4E]", "transition-all", "duration-300");
-            dot.addEventListener("click", () => goToSlide(i));
-            dots.appendChild(dot);
+        function perView() {
+            return desktopQuery.matches ? 2 : 1;
+        }
+
+        function maxIndex() {
+            return Math.max(totalSlide - perView(), 0);
+        }
+
+        function buildDots() {
+            dots.innerHTML = "";
+            for (let i = 0; i <= maxIndex(); i++) {
+                const dot = document.createElement("button");
+                dot.setAttribute("aria-label", "Slide " + (i + 1));
+                dot.classList.add("h-3", "w-3", "rounded-full", "bg-[#C07E4E]", "transition-all", "duration-300",
+                    "md:h-[1.2vw]", "md:w-[1.2vw]");
+                dot.addEventListener("click", () => goToSlide(i));
+                dots.appendChild(dot);
+            }
         }
 
         function updateDots() {
             [...dots.children].forEach((dot, i) => {
                 if (i === currentSlide) {
-                    dot.classList.add("bg-[#7A3D21]", "w-8");
-                    dot.classList.remove("bg-[#C07E4E]", "w-3");
+                    dot.classList.add("bg-[#7A3D21]", "w-8", "md:w-[3vw]");
+                    dot.classList.remove("bg-[#C07E4E]", "w-3", "md:w-[1.2vw]");
                 } else {
-                    dot.classList.add("bg-[#C07E4E]", "w-3");
-                    dot.classList.remove("bg-[#7A3D21]", "w-8");
+                    dot.classList.add("bg-[#C07E4E]", "w-3", "md:w-[1.2vw]");
+                    dot.classList.remove("bg-[#7A3D21]", "w-8", "md:w-[3vw]");
                 }
             });
         }
 
         function goToSlide(index) {
-            currentSlide = (index + totalSlide) % totalSlide;
-            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+            const total = maxIndex() + 1;
+            currentSlide = (index + total) % total;
+            track.style.transform = `translateX(-${currentSlide * (100 / perView())}%)`;
             updateDots();
         }
 
         document.getElementById("prevMobile").addEventListener("click", () => goToSlide(currentSlide - 1));
         document.getElementById("nextMobile").addEventListener("click", () => goToSlide(currentSlide + 1));
 
+        window.addEventListener("resize", () => {
+            buildDots();
+            goToSlide(Math.min(currentSlide, maxIndex()));
+        });
+
+        buildDots();
         goToSlide(0);
     </script>
 </body>
