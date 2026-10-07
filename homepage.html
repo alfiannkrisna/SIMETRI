@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMETRI</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/the-wild-breath-of-zelda" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="fixed top-0 left-0 w-full z-50">
+        <nav id="main-nav" class="flex items-center justify-between bg-[#7A3D21] px-6 xl:px-[90px] h-[90px] outline outline-[6px] outline-[#4C1C0E]">
+            <div class="flex items-center gap-16">
+                <img src="images/navbar/logo-simetri.png" class="w-[93.8px] h-[92.73px] xl:w-[132px] xl:h-[132px] object-contain" alt="Logo SIMETRI">
+                <ul class="hidden xl:flex items-center gap-16 text-[32px] font-normal">
+                    <li>
+                        <a href="homepage.html" style="font-family: 'The Wild Breath of Zelda';" class="underline text-[#F9DCB4] hover:text-[#F9DCB4]">Home</a>
+                    </li>
+                    <li>
+                        <a href="" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Tema</a>
+                    </li>
+                    <li>
+                        <a href="" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Materi</a>
+                    </li>
+                    <li>
+                        <a href="" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Asik</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="hidden xl:flex items-center justify-end gap-[15px] w-[323.02px] h-[40.22px]">
+                <img src="images/navbar/Exclude.png" class="w-[41.58px] h-[41.58px]" alt="X">
+                <img src="images/navbar/Tiktok.png" class="w-[41.58px] h-[41.58px]" alt="TikTok">
+                <img src="images/navbar/ig-logo.png" class="w-[41.58px] h-[41.58px]" alt="Instagram">
+                <img src="images/navbar/yt-logo.png" class="w-[41.58px] h-[41.58px]" alt="YouTube">
+            </div>
+
+            <button id="menu-btn" class="flex xl:hidden items-center justify-center w-12 h-12 bg-[#4C1C0E] rounded-[9.35px]" aria-label="Buka menu" aria-expanded="false">
+                <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#F9DCB4" stroke-width="2" stroke-linecap="round">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="#F9DCB4" stroke-width="2" stroke-linecap="round">
+                    <path d="M6 6l12 12M18 6L6 18" />
+                </svg>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden xl:hidden absolute w-full top-full left-0 bg-[#F6EBD7] border-b-[6px] border-[#4C1C0E]">
+            <ul class="flex flex-col text-[32px] leading-[36px] font-normal">
+                <li>
+                    <a href="homepage.html" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center bg-[#F9DCB4] text-[#7A3D21] underline underline-offset-4">Home</a>
+                </li>
+                <li>
+                    <a href="" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Tema</a>
+                </li>
+                <li>
+                    <a href="" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Materi</a>
+                </li>
+                <li>
+                    <a href="" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Asik</a>
+                </li>
+            </ul>
+            <div class="flex items-center justify-center gap-[15px] h-[88.22px] pt-4 pb-8">
+                <img src="images/navbar/Exclude.png" style="filter: url(#tint);" class="w-[41.58px] h-[41.58px]" alt="X">
+                <img src="images/navbar/Tiktok.png" style="filter: url(#tint);" class="w-[41.58px] h-[41.58px]" alt="TikTok">
+                <img src="images/navbar/ig-logo.png" style="filter: url(#tint);" class="w-[41.58px] h-[41.58px]" alt="Instagram">
+                <img src="images/navbar/yt-logo.png" style="filter: url(#tint);" class="w-[41.58px] h-[41.58px]" alt="YouTube">
+            </div>
+        </div>
+    </header>
+
+    <section class="relative flex items-center justify-center w-full">
+        <img src="images/homepage/mobile/bg-hero.svg" alt="" class="relative w-full h-auto block md:hidden">
+        <img src="images/homepage/desktop/bg-hero.svg" alt="" class="relative w-full h-auto hidden md:block">
+        
+        <div class="absolute w-[338px] md:w-[708px] md:top-[440px] gap-[22px] text-center flex flex-col">
+            <div>
+                <h1 style="font-family: 'The Wild Breath of Zelda';" class="text-[80px] md:text-[160px] leading-[96px] md:leading-[100%] text-white [-webkit-text-stroke:1px_#7A3D21] md:[-webkit-text-stroke:2px_#7A3D21] [paint-order:stroke_fill] [filter:drop-shadow(0_6px_0_#7A3D21)] md:[filter:drop-shadow(0_9px_0_#7A3D21)]">
+                    SIMETRI
+                </h1>
+    
+                <div class="flex items-center justify-center">
+                    <p class="absolute z-20 text-[18px] leading-[24px] md:text-[32px] md:leading-[36px] font-bold md:font-normal text-[#7A3D21] [-webkit-text-stroke:0.1px_#7A3D21] md:[-webkit-text-stroke:0.5px_#7A3D21] [paint-order:stroke_fill]" style="font-family: 'Times New Roman', Times, serif;">
+                        Sistem Informasi Mengajar Teknologi Informasi
+                    </p>
+                    <img src="images/homepage/mobile/kertas-hero.png" alt="" class="relative z-10 object-cover block md:hidden">
+                    <img src="images/homepage/desktop/roll.png" alt="" class="relative z-10 object-cover hidden md:block">
+                </div>
+            </div>
+
+            <div class="gap-[20px] flex justify-center items-center md:gap-[40px]">
+                <a href="#" style="font-family: 'The Wild Breath of Zelda', serif;"
+                class="inline-flex items-center justify-center shrink-0 mb-[8px] md:mb-[12px]
+                        w-[155px] h-[36px] md:w-[278px] md:h-[56px]
+                        rounded-[12px] md:rounded-[18px]
+                        border-2 border-[#FFB36E]
+                        bg-gradient-to-b from-[#FA9F50] to-[#EF733F]
+                        shadow-[0_8px_0_#6B2E1A,inset_0_2px_0_rgba(255,255,255,0.3)]
+                        md:shadow-[0_12px_0_#6B2E1A,inset_0_2px_0_rgba(255,255,255,0.3)]
+                        text-[16px] md:text-[28px] leading-none uppercase text-white no-underline
+                        [text-shadow:0_-1px_0_#808080]
+                        md:[text-shadow:0_-1px_0_#808080]
+                        transition duration-150
+                        hover:brightness-110 hover:-translate-y-0.5
+                        active:translate-y-[6px] md:active:translate-y-[8px]
+                        active:shadow-[0_2px_0_#6B2E1A,inset_0_2px_0_rgba(255,255,255,0.3)]
+                        md:active:shadow-[0_4px_0_#6B2E1A,inset_0_2px_0_rgba(255,255,255,0.3)]">
+                    EXPLORE MORE
+                </a>
+
+                <a href="#" style="font-family: 'The Wild Breath of Zelda', serif;"
+                class="inline-flex items-center justify-center shrink-0 mb-[8px] md:mb-[12px]
+                        w-[155px] h-[36px] md:w-[278px] md:h-[56px]
+                        rounded-[12px] md:rounded-[18px]
+                        border-2 border-[#7FD0C4]
+                        bg-gradient-to-b from-[#5FB8B0] to-[#4A9E97]
+                        shadow-[0_8px_0_#1F4A45,inset_0_2px_0_rgba(255,255,255,0.3)]
+                        md:shadow-[0_12px_0_#1F4A45,inset_0_2px_0_rgba(255,255,255,0.3)]
+                        text-[16px] md:text-[28px] leading-none uppercase text-white no-underline
+                        [text-shadow:0_-1px_0_#808080]
+                        md:[text-shadow:0_-1px_0_#808080]
+                        transition duration-150
+                        hover:brightness-110 hover:-translate-y-0.5
+                        active:translate-y-[6px] md:active:translate-y-[8px]
+                        active:shadow-[0_2px_0_#1F4A45,inset_0_2px_0_rgba(255,255,255,0.3)]
+                        md:active:shadow-[0_4px_0_#1F4A45,inset_0_2px_0_rgba(255,255,255,0.3)]">
+                    LORE
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="relative w-full">
+        <img src="images/homepage/mobile/bg-about.svg" alt="" class="relative block w-full h-auto md:hidden">
+        <img src="images/homepage/desktop/bg-about.svg" alt="" class="relative hidden w-full h-auto md:block">
+        <div class="absolute inset-0 flex items-center justify-center md:block">
+            <img src="images/homepage/desktop/kertas-bg.png" alt="" class="hidden md:block absolute left-[6.8%] top-[21.6%] w-[80.35%] h-auto">
+            <div class="relative z-10 flex w-full flex-col items-center gap-[24px] px-[30px] md:absolute md:left-[12.6%] md:top-1/2 md:w-[53.9%] md:-translate-y-1/2 md:items-start md:gap-[1.667cqw] md:px-0">
+                <h4 style="font-family: 'The Wild Breath of Zelda';" class="text-center md:text-left text-[48px] md:text-[length:5.556cqw] leading-[60px] md:leading-[6.667cqw] text-white [-webkit-text-stroke:2px_#7A3D21] [paint-order:stroke_fill] [filter:drop-shadow(0_4px_0_#7A3D21)]">
+                    APA ITU SIMETRI?
+                </h4>
+                <p style="font-family: 'Times New Roman', Times, serif;" class="text-center md:text-left font-[700] text-[20px] md:text-[length:1.389cqw] leading-[24px] md:leading-[1.667cqw] text-[#7A3D21]">
+                    SIMETRI adalah program pelatihan teknologi berbasis proyek yang diselenggarakan oleh Himpunan Mahasiswa Sistem Informasi ITS. Setiap tahun, kami membuka pintu bagi siswa SMA dan SMK di Surabaya dan sekitarnya untuk belajar langsung dari mahasiswa bukan di ruang kelas biasa, tapi dalam pengalaman nyata yang menghasilkan karya yang bisa mereka banggakan. Kami percaya kesempatan untuk belajar dan berkembang seharusnya bisa dirasakan semua orang, di manapun mereka berada.
+                </p>
+            </div>
+            <img src="images/homepage/desktop/karakter.png" alt="" class="hidden md:block absolute z-10 left-[69.8%] top-[26.4%] w-[24.2%] h-auto">
+        </div>
+    </section>
+
+    <section class="relative w-full overflow-hidden bg-[#7A3D21]">
+        <img src="images/homepage/mobile/bg-dokumentasi.svg" alt=""
+            class="block w-full h-auto scale-[1.02] md:hidden">
+        <img src="images/homepage/desktop/bg-dokumentasi.svg" alt=""
+            class="hidden w-full h-auto scale-[1.02] md:block">
+
+        <div class="absolute inset-0 md:top-auto">
+            <img src="images/homepage/desktop/kertas-dokumentasi.png" alt="Kertas Dokumentasi"
+                class="hidden md:block relative z-[1] mx-auto w-full h-auto">
+
+            <div class="absolute inset-0 z-[2] flex flex-col items-center">
+                <h1 style="font-family: 'The Wild Breath of Zelda';"
+                    class="relative z-[4] mt-[48px] -mb-[3%] text-center text-white text-[60px] leading-none [-webkit-text-stroke:2px_#7A3D21] drop-shadow-[0_6px_0_#7A3D21] md:absolute md:inset-x-0 md:top-[12%] md:m-0 md:text-[80px]">
+                    DOKUMENTASI
+                </h1>
+
+                <div class="relative w-full flex-1 mt-5 md:contents">
+                    <img src="images/homepage/mobile/kertas-dokumentasi.png" alt="Kertas Dokumentasi"
+                        class="block w-full h-auto md:hidden">
+
+                    <div class="absolute inset-0 z-[2] flex flex-col items-center justify-center px-[13%] md:contents">
+
+                        <div class="w-full overflow-hidden md:absolute md:left-[17%] md:right-[17%] md:top-[30%] md:w-auto">
+                            <div id="track" class="flex transition-transform duration-500 ease-in-out">
+                                <div class="min-w-full md:min-w-[50%] md:px-[1%]">
+                                    <img src="images/homepage/dokumentasi/Salinan DSCF0054.JPG" alt="Dokumentasi 1"
+                                        class="aspect-[3/2] w-full object-cover shadow-md">
+                                </div>
+                                <div class="min-w-full md:min-w-[50%] md:px-[1%]">
+                                    <img src="images/homepage/dokumentasi/Salinan DSCF0008.JPG" alt="Dokumentasi 2"
+                                        class="aspect-[3/2] w-full object-cover shadow-md">
+                                </div>
+                                <div class="min-w-full md:min-w-[50%] md:px-[1%]">
+                                    <img src="images/homepage/dokumentasi/Salinan A6600008.JPG" alt="Dokumentasi 3"
+                                        class="aspect-[3/2] w-full object-cover shadow-md">
+                                </div>
+                                <div class="min-w-full md:min-w-[50%] md:px-[1%]">
+                                    <img src="images/homepage/dokumentasi/Foto4.jpeg" alt="Dokumentasi 4"
+                                        class="aspect-[3/2] w-full object-cover shadow-md">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative z-[3] flex items-center justify-center gap-4 mt-[12%] md:contents">
+                            <button id="prevMobile" aria-label="Sebelumnya"
+                                    class="shrink-0 md:absolute md:left-[11%] md:top-[50%] md:-translate-y-1/2">
+                                <img src="images/homepage/desktop/chevron-left.png" alt="" class="block w-[66px] h-auto md:w-[110px]">
+                            </button>
+
+                            <div id="carouselDots"
+                                class="flex items-center gap-2 md:absolute md:left-1/2 md:top-[80%] md:-translate-x-1/2"></div>
+
+                            <button id="nextMobile" aria-label="Berikutnya"
+                                    class="shrink-0 md:absolute md:right-[11%] md:top-[50%] md:-translate-y-1/2">
+                                <img src="images/homepage/desktop/chevron-right.png" alt="" class="block w-[66px] h-auto md:w-[110px]">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="absolute w-full h-auto py-[30px] px-[24px] md:py-[78px] md:px-[90px] gap-[10px] flex items-center justify-center overflow-hidden" style="background-image:url('images/homepage/footer/bg-footer.png'); background-size:cover; background-position:center;">
+        <img src="images/homepage/footer/frame-footer-mobile.png" alt="" class="block md:hidden relative w-full h-full pointer-events-none">
+        <img src="images/homepage/footer/frame-footer.png" alt="" class="hidden md:block relative w-full h-full pointer-events-none">
+
+        <div class="absolute z-[2] flex flex-col md:flex md:flex-row items-center justify-center gap-[14px] md:gap-[120px]">
+
+            <nav class="flex flex-col items-center gap-[12px]">
+                <a href="#" class="underline underline-offset-4 text-[#F9DCB4] text-[24px] font-normal tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Home</a>
+                <a href="#" class="no-underline text-[#C07E4E] text-[24px] font-normal tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Tema</a>
+                <a href="#" class="no-underline text-[#C07E4E] text-[24px] font-normal tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Materi</a>
+                <a href="#" class="no-underline text-[#C07E4E] text-[24px] font-normal tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Asik</a>
+            </nav>
+
+            <div class="text-center">
+                <div class="flex flex-col items-center justify-center gap-[31px] md:gap-[48px]">
+                    
+                    <div class="gap-[5px] md:gap-[10px]">
+                        <h3 class="text-[#F9DCB4] text-[18.38px] font-semibold md:text-[28px] [-webkit-text-stroke:0.5px_#f0c28a]" style="font-family:'Times New Roman',serif;">
+                            Didukung Oleh
+                        </h3>
+
+                        <div class="flex items-center justify-center gap-[10.63px] md:gap-[17px]">
+                            <img src="images/homepage/footer/Group 1410136690.png" alt="" class=" w-[93px] h-[32px] md:w-[142px] md:h-[50px]">
+                            <img src="images/homepage/footer/Logo SI.png" alt="" class="w-[73px] h-[27px] md:w-[111px] md:h-[42px]">
+                            <img src="images/homepage/footer/ITS Advancing Humanity SVG.png" alt="" class="w-[50px] h-[27px] md:w-[76px] md:h-[41px]">
+                            <img src="images/homepage/footer/Group 13906.png" alt="" class="w-[70px] h-[28px] object-contain md:w-[54px] md:h-[47px]">
+                        </div>
+    
+                        <div class="flex w-full items-center justify-center gap-[10.63px] md:gap-[17px]">
+                            <img src="images/homepage/footer/Logo Kabinet.png" alt="" class="shrink-0 object-contain w-[84px] h-[25px] md:w-[128px] md:h-[39px]">
+                            <img src="images/homepage/footer/Frame 48098812.png" alt="" class="shrink-0 object-contain w-[23px] h-[32px] md:w-[43px] md:h-[48px]">
+                            <img src="images/homepage/footer/diktisaintek.png" alt="" class="shrink-0 object-contain w-[32px] h-[27px] md:w-[49px] md:h-[42px]">
+                            <img src="images/homepage/footer/Mask group.png" alt="" class="shrink-0 object-contain w-[56px] h-[33px] md:w-[86px] md:h-[50px]">
+                        </div>
+                    </div>
+
+                    <p class="text-[#F9DCB4] text-[13.13px] font-bold leading-[1.4] md:text-[20px]" style="font-family:'Times New Roman',serif;">
+                        © SIMETRI HMSI ITS
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('icon-open');
+        const iconClose = document.getElementById('icon-close');
+
+        btn.addEventListener('click', () => {
+            const isOpen = !menu.classList.contains('hidden');
+            menu.classList.toggle('hidden');
+            iconOpen.classList.toggle('hidden');
+            iconClose.classList.toggle('hidden');
+            btn.setAttribute('aria-expanded', String(!isOpen));
+        });
+
+        const track = document.getElementById("track");
+        const dots = document.getElementById("carouselDots");
+        const totalSlide = track.children.length;
+        const desktopQuery = window.matchMedia("(min-width: 768px)");
+        let currentSlide = 0;
+
+        function perView() {
+            return desktopQuery.matches ? 2 : 1;
+        }
+
+        function maxIndex() {
+            return Math.max(totalSlide - perView(), 0);
+        }
+
+        function buildDots() {
+            dots.innerHTML = "";
+            for (let i = 0; i <= maxIndex(); i++) {
+                const dot = document.createElement("button");
+                dot.setAttribute("aria-label", "Slide " + (i + 1));
+                dot.classList.add("h-3", "w-3", "rounded-full", "bg-[#C07E4E]", "transition-all", "duration-300",
+                    "md:h-[1.2vw]", "md:w-[1.2vw]");
+                dot.addEventListener("click", () => goToSlide(i));
+                dots.appendChild(dot);
+            }
+        }
+
+        function updateDots() {
+            [...dots.children].forEach((dot, i) => {
+                if (i === currentSlide) {
+                    dot.classList.add("bg-[#7A3D21]", "w-8", "md:w-[3vw]");
+                    dot.classList.remove("bg-[#C07E4E]", "w-3", "md:w-[1.2vw]");
+                } else {
+                    dot.classList.add("bg-[#C07E4E]", "w-3", "md:w-[1.2vw]");
+                    dot.classList.remove("bg-[#7A3D21]", "w-8", "md:w-[3vw]");
+                }
+            });
+        }
+
+        function goToSlide(index) {
+            const total = maxIndex() + 1;
+            currentSlide = (index + total) % total;
+            track.style.transform = `translateX(-${currentSlide * (100 / perView())}%)`;
+            updateDots();
+        }
+
+        document.getElementById("prevMobile").addEventListener("click", () => goToSlide(currentSlide - 1));
+        document.getElementById("nextMobile").addEventListener("click", () => goToSlide(currentSlide + 1));
+
+        window.addEventListener("resize", () => {
+            buildDots();
+            goToSlide(Math.min(currentSlide, maxIndex()));
+        });
+
+        buildDots();
+        goToSlide(0);
+    </script>
+</body>
+
+</html>
