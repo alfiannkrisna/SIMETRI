@@ -14,7 +14,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gradient-to-t from-[#7A3D21] to-[#4C1C0E] overflow-x-hidden">
     <header class="fixed top-0 left-0 w-full z-50">
         <nav id="main-nav" class="flex items-center justify-between bg-[#7A3D21] px-6 xl:px-[90px] h-[90px] outline outline-[6px] outline-[#4C1C0E]">
             <div class="flex items-center gap-16">
@@ -158,11 +158,11 @@
         </div>
     </section>
 
-    <section class="relative w-full overflow-hidden">
+    <section class="relative w-full bg-[#143D37] -mb-px">
         <img src="images/homepage/mobile/bg-dokumentasi.svg" alt=""
-            class="block w-full h-auto scale-[1.01] md:hidden">
+            class="block w-full h-auto md:hidden">
         <img src="images/homepage/desktop/bg-dokumentasi.svg" alt=""
-            class="hidden w-full h-auto scale-[1.01] md:block">
+            class="hidden w-full h-auto md:block">
 
         <div class="absolute inset-0 md:top-auto">
             <img src="images/homepage/desktop/kertas-dokumentasi.png" alt="Kertas Dokumentasi"
@@ -221,12 +221,12 @@
         </div>
     </section>
 
-    <section id="testiSection" class="relative w-full overflow-hidden">
+    <section class="relative w-full bg-gradient-to-b from-[#143D37] to-[#7A3D21]">
 
         <img src="images/homepage/mobile/bg-testimoni.svg" alt=""
             class="block md:hidden w-full h-auto">
         <img src="images/homepage/desktop/bg-testimoni.svg" alt=""
-            class="hidden md:block w-full h-auto scale-[1.005]">
+            class="hidden md:block w-full h-auto">
 
         <div class="absolute inset-0 px-4 flex flex-col justify-center items-center">
             <h1 style="font-family: 'The Wild Breath of Zelda';"
@@ -343,7 +343,6 @@
             </div>
         </div>
     </section>
-
 
     <footer class="absolute w-full h-auto py-[30px] px-[24px] md:py-[78px] md:px-[90px] gap-[10px] flex items-center justify-center overflow-hidden" style="background-image:url('images/homepage/footer/bg-footer.png'); background-size:cover; background-position:center;">
         <img src="images/homepage/footer/frame-footer-mobile.png" alt="" class="block md:hidden relative w-full h-full pointer-events-none">
