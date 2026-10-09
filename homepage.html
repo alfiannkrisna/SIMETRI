@@ -6,36 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIMETRI</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/the-wild-breath-of-zelda" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gradient-to-t from-[#7A3D21] to-[#4C1C0E] overflow-x-hidden">
+    <!-- HEADER -->
     <header class="fixed top-0 left-0 w-full z-50">
-        <nav id="main-nav" class="flex items-center justify-between bg-[#7A3D21] px-6 xl:px-[90px] h-[90px] outline outline-[6px] outline-[#4C1C0E]">
+        <nav class="flex items-center justify-between bg-[#7A3D21] px-6 xl:px-[90px] h-[90px] outline outline-[6px] outline-[#4C1C0E]">
             <div class="flex items-center gap-16">
                 <img src="images/navbar/logo-simetri.png" class="w-[93.8px] h-[92.73px] xl:w-[132px] xl:h-[132px] object-contain" alt="Logo SIMETRI">
-                <ul class="hidden xl:flex items-center gap-16 text-[32px] font-normal">
-                    <li>
-                        <a href="homepage.html" style="font-family: 'The Wild Breath of Zelda';" class="underline text-[#F9DCB4] hover:text-[#F9DCB4]">Home</a>
-                    </li>
-                    <li>
-                        <a href="" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Tema</a>
-                    </li>
-                    <li>
-                        <a href="" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Materi</a>
-                    </li>
-                    <li>
-                        <a href="" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Asik</a>
-                    </li>
+                <ul class="hidden xl:flex items-center gap-16 text-[32px]">
+                    <li><a href="homepage.html" style="font-family: 'The Wild Breath of Zelda';" class="underline text-[#F9DCB4]">Home</a></li>
+                    <li><a href="#" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Tema</a></li>
+                    <li><a href="#" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Materi</a></li>
+                    <li><a href="#" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Asik</a></li>
                 </ul>
             </div>
 
-            <div class="hidden xl:flex items-center justify-end gap-[15px] w-[323.02px] h-[40.22px]">
+            <div class="hidden xl:flex items-center justify-end gap-[15px] w-[323.02px]">
                 <img src="images/navbar/Exclude.png" class="w-[41.58px] h-[41.58px]" alt="X">
                 <img src="images/navbar/Tiktok.png" class="w-[41.58px] h-[41.58px]" alt="TikTok">
                 <img src="images/navbar/ig-logo.png" class="w-[41.58px] h-[41.58px]" alt="Instagram">
@@ -53,165 +42,123 @@
         </nav>
 
         <div id="mobile-menu" class="hidden xl:hidden absolute w-full top-full left-0 bg-[#F6EBD7] border-b-[6px] border-[#4C1C0E]">
-            <ul class="flex flex-col text-[32px] leading-[36px] font-normal">
-                <li>
-                    <a href="homepage.html" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center bg-[#F9DCB4] text-[#7A3D21] underline underline-offset-4">Home</a>
-                </li>
-                <li>
-                    <a href="" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Tema</a>
-                </li>
-                <li>
-                    <a href="" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Materi</a>
-                </li>
-                <li>
-                    <a href="" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Asik</a>
-                </li>
+            <ul class="flex flex-col text-[32px] leading-[36px]">
+                <li><a href="homepage.html" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center bg-[#F9DCB4] text-[#7A3D21] underline underline-offset-4">Home</a></li>
+                <li><a href="#" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Tema</a></li>
+                <li><a href="#" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Materi</a></li>
+                <li><a href="#" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Asik</a></li>
             </ul>
             <div class="flex items-center justify-center gap-[15px] h-[88.22px] pt-4 pb-8">
-                <img src="images/navbar/Exclude.png" style="filter: url(#tint);" class="w-[41.58px] h-[41.58px]" alt="X">
-                <img src="images/navbar/Tiktok.png" style="filter: url(#tint);" class="w-[41.58px] h-[41.58px]" alt="TikTok">
-                <img src="images/navbar/ig-logo.png" style="filter: url(#tint);" class="w-[41.58px] h-[41.58px]" alt="Instagram">
-                <img src="images/navbar/yt-logo.png" style="filter: url(#tint);" class="w-[41.58px] h-[41.58px]" alt="YouTube">
+                <img src="images/navbar/Exclude.png" class="w-[41.58px] h-[41.58px]" alt="X">
+                <img src="images/navbar/Tiktok.png" class="w-[41.58px] h-[41.58px]" alt="TikTok">
+                <img src="images/navbar/ig-logo.png" class="w-[41.58px] h-[41.58px]" alt="Instagram">
+                <img src="images/navbar/yt-logo.png" class="w-[41.58px] h-[41.58px]" alt="YouTube">
             </div>
         </div>
     </header>
 
+    <!-- HERO -->
     <section class="relative flex items-center justify-center w-full">
-        <img src="images/homepage/mobile/bg-hero.svg" alt="" class="relative w-full h-auto block md:hidden">
-        <img src="images/homepage/desktop/bg-hero.svg" alt="" class="relative w-full h-auto hidden md:block">
-        
+        <img src="images/homepage/mobile/bg-hero.svg" alt="" class="w-full h-auto block md:hidden">
+        <img src="images/homepage/desktop/bg-hero.svg" alt="" class="w-full h-auto hidden md:block">
+
         <div class="absolute w-[338px] md:w-[708px] md:top-[440px] gap-[22px] text-center flex flex-col">
             <div>
                 <h1 style="font-family: 'The Wild Breath of Zelda';" class="text-[80px] md:text-[160px] leading-[96px] md:leading-[100%] text-white [-webkit-text-stroke:1px_#7A3D21] md:[-webkit-text-stroke:2px_#7A3D21] [paint-order:stroke_fill] [filter:drop-shadow(0_6px_0_#7A3D21)] md:[filter:drop-shadow(0_9px_0_#7A3D21)]">
                     SIMETRI
                 </h1>
-    
+
                 <div class="flex items-center justify-center">
                     <p class="absolute z-20 -translate-y-[4px] text-[18px] leading-[24px] md:text-[32px] md:leading-[36px] font-bold md:font-normal text-[#7A3D21] [-webkit-text-stroke:0.1px_#7A3D21] md:[-webkit-text-stroke:0.5px_#7A3D21] [paint-order:stroke_fill]" style="font-family: 'Times New Roman', Times, serif;">
                         Sistem Informasi Mengajar Teknologi Informasi
                     </p>
-                    <img src="images/homepage/mobile/kertas-hero.png" alt="" class="relative z-10 object-cover block md:hidden">
-                    <img src="images/homepage/desktop/roll.png" alt="" class="relative z-10 object-cover hidden md:block">
+                    <img src="images/homepage/mobile/kertas-hero.png" alt="" class="relative z-10 block md:hidden">
+                    <img src="images/homepage/desktop/roll.png" alt="" class="relative z-10 hidden md:block">
                 </div>
             </div>
 
-            <div class="gap-[20px] flex justify-center items-center md:gap-[40px]">
+            <div class="gap-[20px] md:gap-[40px] flex justify-center items-center">
                 <a href="#" style="font-family: 'The Wild Breath of Zelda', serif;"
-                class="group inline-block shrink-0 no-underline
-                        w-[155px] md:w-[278px]
-                        rounded-[12px] md:rounded-[18px]
-                        border border-[#5C1A2E]
-                        bg-[#6E2F1F]
-                        pb-[6px] md:pb-[10px]">
-                    <span class="flex items-center justify-center w-full
-                                h-[36px] md:h-[56px]
-                                rounded-[11px] md:rounded-[17px]
-                                border border-[#F3B641]
-                                bg-[linear-gradient(180deg,#F36F41_0%,#F39241_46.15%,#F36F41_46.16%,#F39241_100%)]
-                                text-[16px] md:text-[28px] leading-none uppercase text-white
-                                [text-shadow:0_-1px_0_#808080]
-                                transition duration-150
-                                group-hover:brightness-110
-                                group-active:translate-y-[4px] md:group-active:translate-y-[8px]">
+                   class="group inline-block shrink-0 w-[155px] md:w-[278px] rounded-[12px] md:rounded-[18px] border border-[#5C1A2E] bg-[#6E2F1F] pb-[6px] md:pb-[10px]">
+                    <span class="flex items-center justify-center w-full h-[36px] md:h-[56px] rounded-[11px] md:rounded-[17px] border border-[#F3B641] bg-[linear-gradient(180deg,#F36F41_0%,#F39241_46.15%,#F36F41_46.16%,#F39241_100%)] text-[16px] md:text-[28px] leading-none uppercase text-white [text-shadow:0_-1px_0_#808080] transition duration-150 group-hover:brightness-110 group-active:translate-y-[4px] md:group-active:translate-y-[8px]">
                         EXPLORE MORE
                     </span>
                 </a>
 
                 <a href="#" style="font-family: 'The Wild Breath of Zelda', serif;"
-                class="group inline-block shrink-0 no-underline
-                        w-[155px] md:w-[278px]
-                        rounded-[12px] md:rounded-[18px]
-                        border border-[#0F1F1C]
-                        bg-[#1F4A45]
-                        pb-[6px] md:pb-[10px]">
-                    <span class="flex items-center justify-center w-full
-                                h-[36px] md:h-[56px]
-                                rounded-[11px] md:rounded-[17px]
-                                border border-[#C4DCAC]
-                                bg-[linear-gradient(180deg,#4AA294_0%,#5AB3AD_46.15%,#4AA294_46.16%,#5AB3AD_100%)]
-                                text-[16px] md:text-[28px] leading-none uppercase text-white
-                                [text-shadow:0_-1px_0_#808080]
-                                transition duration-150
-                                group-hover:brightness-110
-                                group-active:translate-y-[4px] md:group-active:translate-y-[8px]">
+                   class="group inline-block shrink-0 w-[155px] md:w-[278px] rounded-[12px] md:rounded-[18px] border border-[#0F1F1C] bg-[#1F4A45] pb-[6px] md:pb-[10px]">
+                    <span class="flex items-center justify-center w-full h-[36px] md:h-[56px] rounded-[11px] md:rounded-[17px] border border-[#C4DCAC] bg-[linear-gradient(180deg,#4AA294_0%,#5AB3AD_46.15%,#4AA294_46.16%,#5AB3AD_100%)] text-[16px] md:text-[28px] leading-none uppercase text-white [text-shadow:0_-1px_0_#808080] transition duration-150 group-hover:brightness-110 group-active:translate-y-[4px] md:group-active:translate-y-[8px]">
                         LORE
                     </span>
                 </a>
             </div>
         </div>
     </section>
-    
+
+    <!-- ABOUT -->
     <section class="relative w-full">
-        <img src="images/homepage/mobile/bg-about.svg" alt="" class="relative block w-full h-auto md:hidden">
-        <img src="images/homepage/desktop/bg-about.svg" alt="" class="relative hidden w-full h-auto md:block">
+        <img src="images/homepage/mobile/bg-about.svg" alt="" class="block w-full h-auto md:hidden">
+        <img src="images/homepage/desktop/bg-about.svg" alt="" class="hidden w-full h-auto md:block">
+
         <div class="absolute inset-0 flex items-center justify-center md:block">
             <img src="images/homepage/desktop/kertas-bg.png" alt="" class="hidden md:block absolute left-[6.8%] top-[21.6%] w-[80.35%] h-auto">
+
             <div class="relative z-10 flex w-full flex-col items-center gap-[24px] px-[30px] md:absolute md:left-[12.6%] md:top-1/2 md:w-[53.9%] md:-translate-y-1/2 md:items-start md:gap-[1.667cqw] md:px-0">
                 <h4 style="font-family: 'The Wild Breath of Zelda';" class="text-center md:text-left text-[48px] md:text-[length:5.556cqw] leading-[60px] md:leading-[6.667cqw] text-white [-webkit-text-stroke:2px_#7A3D21] [paint-order:stroke_fill] [filter:drop-shadow(0_4px_0_#7A3D21)]">
                     APA ITU SIMETRI?
                 </h4>
-                <p style="font-family: 'Times New Roman', Times, serif;" class="text-center md:text-left font-[700] text-[20px] md:text-[length:1.389cqw] leading-[24px] md:leading-[1.667cqw] text-[#7A3D21]">
+                <p style="font-family: 'Times New Roman', Times, serif;" class="text-center md:text-left font-bold text-[20px] md:text-[length:1.389cqw] leading-[24px] md:leading-[1.667cqw] text-[#7A3D21]">
                     SIMETRI adalah program pelatihan teknologi berbasis proyek yang diselenggarakan oleh Himpunan Mahasiswa Sistem Informasi ITS. Setiap tahun, kami membuka pintu bagi siswa SMA dan SMK di Surabaya dan sekitarnya untuk belajar langsung dari mahasiswa bukan di ruang kelas biasa, tapi dalam pengalaman nyata yang menghasilkan karya yang bisa mereka banggakan. Kami percaya kesempatan untuk belajar dan berkembang seharusnya bisa dirasakan semua orang, di manapun mereka berada.
                 </p>
             </div>
+
             <img src="images/homepage/desktop/karakter.png" alt="" class="hidden md:block absolute z-10 left-[69.8%] top-[26.4%] w-[24.2%] h-auto">
         </div>
     </section>
 
+    <!-- DOKUMENTASI -->
     <section class="relative w-full bg-[#143D37] -mb-px">
-        <img src="images/homepage/mobile/bg-dokumentasi.svg" alt=""
-            class="block w-full h-auto md:hidden">
-        <img src="images/homepage/desktop/bg-dokumentasi.svg" alt=""
-            class="hidden w-full h-auto md:block">
+        <img src="images/homepage/mobile/bg-dokumentasi.svg" alt="" class="block w-full h-auto md:hidden">
+        <img src="images/homepage/desktop/bg-dokumentasi.svg" alt="" class="hidden w-full h-auto md:block">
 
         <div class="absolute inset-0 md:top-auto">
-            <img src="images/homepage/desktop/kertas-dokumentasi.png" alt="Kertas Dokumentasi"
-                class="hidden md:block relative z-[1] mx-auto w-full h-auto">
+            <img src="images/homepage/desktop/kertas-dokumentasi.png" alt="Kertas Dokumentasi" class="hidden md:block relative z-[1] mx-auto w-full h-auto">
 
             <div class="absolute inset-0 z-[2] top-[20px] flex flex-col items-center">
-                <h1 style="font-family: 'The Wild Breath of Zelda';"
-                    class="relative z-[4] mt-[48px] -mb-[3%] text-center text-white text-[60px] leading-none [-webkit-text-stroke:2px_#7A3D21] drop-shadow-[0_6px_0_#7A3D21] md:absolute md:inset-x-0 md:top-[12%] md:m-0 md:text-[80px]">
+                <h1 style="font-family: 'The Wild Breath of Zelda';" class="relative z-[4] mt-[48px] -mb-[3%] text-center text-white text-[60px] leading-none [-webkit-text-stroke:2px_#7A3D21] drop-shadow-[0_6px_0_#7A3D21] md:absolute md:inset-x-0 md:top-[12%] md:m-0 md:text-[80px]">
                     DOKUMENTASI
                 </h1>
 
                 <div class="relative w-full flex-1 mt-5 md:contents">
-                    <img src="images/homepage/mobile/kertas-dokumentasi.png" alt="Kertas Dokumentasi"
-                        class="block w-full h-auto md:hidden">
+                    <img src="images/homepage/mobile/kertas-dokumentasi.png" alt="Kertas Dokumentasi" class="block w-full h-auto md:hidden">
 
                     <div class="absolute inset-0 z-[2] flex flex-col items-center justify-center px-[13%] md:contents">
 
                         <div class="w-full overflow-hidden md:absolute md:left-[17%] md:right-[17%] md:top-[30%] md:w-auto">
                             <div id="track" class="flex transition-transform duration-500 ease-in-out">
                                 <div class="min-w-full md:min-w-[50%] md:px-[1%]">
-                                    <img src="images/homepage/dokumentasi/Salinan DSCF0054.JPG" alt="Dokumentasi 1"
-                                        class="aspect-[3/2] w-full object-cover shadow-md">
+                                    <img src="images/homepage/dokumentasi/Salinan DSCF0054.JPG" alt="Dokumentasi 1" class="aspect-[3/2] w-full object-cover shadow-md">
                                 </div>
                                 <div class="min-w-full md:min-w-[50%] md:px-[1%]">
-                                    <img src="images/homepage/dokumentasi/Salinan DSCF0008.JPG" alt="Dokumentasi 2"
-                                        class="aspect-[3/2] w-full object-cover shadow-md">
+                                    <img src="images/homepage/dokumentasi/Salinan DSCF0008.JPG" alt="Dokumentasi 2" class="aspect-[3/2] w-full object-cover shadow-md">
                                 </div>
                                 <div class="min-w-full md:min-w-[50%] md:px-[1%]">
-                                    <img src="images/homepage/dokumentasi/Salinan A6600008.JPG" alt="Dokumentasi 3"
-                                        class="aspect-[3/2] w-full object-cover shadow-md">
+                                    <img src="images/homepage/dokumentasi/Salinan A6600008.JPG" alt="Dokumentasi 3" class="aspect-[3/2] w-full object-cover shadow-md">
                                 </div>
                                 <div class="min-w-full md:min-w-[50%] md:px-[1%]">
-                                    <img src="images/homepage/dokumentasi/Foto4.jpeg" alt="Dokumentasi 4"
-                                        class="aspect-[3/2] w-full object-cover shadow-md">
+                                    <img src="images/homepage/dokumentasi/Foto4.jpeg" alt="Dokumentasi 4" class="aspect-[3/2] w-full object-cover shadow-md">
                                 </div>
                             </div>
                         </div>
 
                         <div class="relative z-[3] flex items-center justify-center gap-4 mt-[12%] md:contents">
-                            <button id="prevMobile" aria-label="Sebelumnya"
-                                    class="shrink-0 md:absolute md:left-[11%] md:top-[50%] md:-translate-y-1/2">
+                            <button id="prevMobile" aria-label="Sebelumnya" class="shrink-0 md:absolute md:left-[11%] md:top-1/2 md:-translate-y-1/2">
                                 <img src="images/homepage/desktop/chevron-left.png" alt="" class="block w-[66px] h-auto md:w-[110px]">
                             </button>
 
-                            <div id="carouselDots"
-                                class="flex items-center gap-2 md:absolute md:left-1/2 md:top-[80%] md:-translate-x-1/2"></div>
+                            <div id="carouselDots" class="flex items-center gap-2 md:absolute md:left-1/2 md:top-[80%] md:-translate-x-1/2"></div>
 
-                            <button id="nextMobile" aria-label="Berikutnya"
-                                    class="shrink-0 md:absolute md:right-[11%] md:top-[50%] md:-translate-y-1/2">
+                            <button id="nextMobile" aria-label="Berikutnya" class="shrink-0 md:absolute md:right-[11%] md:top-1/2 md:-translate-y-1/2">
                                 <img src="images/homepage/desktop/chevron-right.png" alt="" class="block w-[66px] h-auto md:w-[110px]">
                             </button>
                         </div>
@@ -221,33 +168,27 @@
         </div>
     </section>
 
+    <!-- TESTIMONI -->
     <section class="relative w-full bg-gradient-to-b from-[#143D37] to-[#7A3D21]">
-
-        <img src="images/homepage/mobile/bg-testimoni.svg" alt=""
-            class="block md:hidden w-full h-auto">
-        <img src="images/homepage/desktop/bg-testimoni.svg" alt=""
-            class="hidden md:block w-full h-auto">
+        <img src="images/homepage/mobile/bg-testimoni.svg" alt="" class="block md:hidden w-full h-auto">
+        <img src="images/homepage/desktop/bg-testimoni.svg" alt="" class="hidden md:block w-full h-auto">
 
         <div class="absolute inset-0 px-4 flex flex-col justify-center items-center">
-            <h1 style="font-family: 'The Wild Breath of Zelda';"
-                class="relative z-[4] top-6 md:top-36 text-white text-[60px] md:text-[80px] font-normal leading-[80px] md:leading-[96px] text-center mb-6 md:mb-40 [-webkit-text-stroke:1px_#7A3D21] drop-shadow-[0_6px_0_#7A3D21]">
+            <h1 style="font-family: 'The Wild Breath of Zelda';" class="relative z-[4] top-6 md:top-36 text-white text-[60px] md:text-[80px] leading-[80px] md:leading-[96px] text-center mb-6 md:mb-40 [-webkit-text-stroke:1px_#7A3D21] drop-shadow-[0_6px_0_#7A3D21]">
                 APA KATA MEREKA?
             </h1>
 
             <div class="relative w-full max-w-[370px] md:max-w-[1200px] mx-auto">
-
-                <img src="images/homepage/mobile/paper-testimoni.png" alt="Paper Background"
-                    class="block md:hidden relative top-[100px] w-full h-auto pointer-events-none drop-shadow-md" />
-                <img src="images/homepage/desktop/paper-testimoni.png" alt="Paper Background"
-                    class="hidden md:block w-full h-auto pointer-events-none drop-shadow-lg" />
+                <img src="images/homepage/mobile/paper-testimoni.png" alt="Paper Background" class="block md:hidden relative top-[100px] w-full h-auto pointer-events-none drop-shadow-md">
+                <img src="images/homepage/desktop/paper-testimoni.png" alt="Paper Background" class="hidden md:block w-full h-auto pointer-events-none drop-shadow-lg">
 
                 <div class="absolute inset-0 z-[2] flex items-center px-4 md:px-20">
                     <div class="w-full overflow-hidden mx-6 md:mx-16">
                         <div id="tracks" class="flex transition-transform duration-300 ease-in-out">
 
                             <!-- Slide 1: Aurel -->
-                            <div class="w-full flex-shrink-0 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 px-2 md:px-6">
-                                <div class="relative top-[40px] md:top-0 w-[300px] md:w-[450px] flex-shrink-0 rotate-[4deg] md:rotate-0">
+                            <div class="w-full shrink-0 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 px-2 md:px-6">
+                                <div class="relative top-[40px] md:top-0 w-[300px] md:w-[450px] shrink-0 rotate-[4deg] md:rotate-0">
                                     <img src="images/homepage/Testimoni/Card-aurel.png" alt="Card Aurel" class="w-full h-auto object-contain">
                                 </div>
                                 <div class="flex-1 flex flex-col justify-center max-w-[249px] md:max-w-[400px] md:text-left text-center relative">
@@ -260,8 +201,8 @@
                             </div>
 
                             <!-- Slide 2: Kevin -->
-                            <div class="w-full flex-shrink-0 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 px-2 md:px-6">
-                                <div class="relative top-[40px] md:top-0 w-[300px] md:w-[450px] flex-shrink-0 rotate-[4deg] md:rotate-0">
+                            <div class="w-full shrink-0 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 px-2 md:px-6">
+                                <div class="relative top-[40px] md:top-0 w-[300px] md:w-[450px] shrink-0 rotate-[4deg] md:rotate-0">
                                     <img src="images/homepage/Testimoni/Card-kevin.png" alt="Card Kevin" class="w-full h-auto object-contain">
                                 </div>
                                 <div class="flex-1 flex flex-col justify-center max-w-[249px] md:max-w-[400px] md:text-left text-center relative">
@@ -274,8 +215,8 @@
                             </div>
 
                             <!-- Slide 3: Fauzan -->
-                            <div class="w-full flex-shrink-0 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 px-2 md:px-6">
-                                <div class="relative top-[40px] md:top-0 w-[300px] md:w-[450px] flex-shrink-0 rotate-[4deg] md:rotate-0">
+                            <div class="w-full shrink-0 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 px-2 md:px-6">
+                                <div class="relative top-[40px] md:top-0 w-[300px] md:w-[450px] shrink-0 rotate-[4deg] md:rotate-0">
                                     <img src="images/homepage/Testimoni/Card-fauzan.png" alt="Card Fauzan" class="w-full h-auto object-contain">
                                 </div>
                                 <div class="flex-1 flex flex-col justify-center max-w-[249px] md:max-w-[400px] md:text-left text-center relative">
@@ -288,8 +229,8 @@
                             </div>
 
                             <!-- Slide 4: Karin -->
-                            <div class="w-full flex-shrink-0 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 px-2 md:px-6">
-                                <div class="relative top-[40px] md:top-0 w-[300px] md:w-[450px] flex-shrink-0 rotate-[4deg] md:rotate-0">
+                            <div class="w-full shrink-0 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 px-2 md:px-6">
+                                <div class="relative top-[40px] md:top-0 w-[300px] md:w-[450px] shrink-0 rotate-[4deg] md:rotate-0">
                                     <img src="images/homepage/Testimoni/Card-karin.png" alt="Card Karin" class="w-full h-auto object-contain">
                                 </div>
                                 <div class="flex-1 flex flex-col justify-center max-w-[249px] md:max-w-[400px] md:text-left text-center relative">
@@ -302,8 +243,8 @@
                             </div>
 
                             <!-- Slide 5: Lala -->
-                            <div class="w-full flex-shrink-0 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 px-2 md:px-6">
-                                <div class="relative top-[40px] md:top-0 w-[300px] md:w-[450px] flex-shrink-0 rotate-[4deg] md:rotate-0">
+                            <div class="w-full shrink-0 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 px-2 md:px-6">
+                                <div class="relative top-[40px] md:top-0 w-[300px] md:w-[450px] shrink-0 rotate-[4deg] md:rotate-0">
                                     <img src="images/homepage/Testimoni/Card-lala.png" alt="Card Lala" class="w-full h-auto object-contain">
                                 </div>
                                 <div class="flex-1 flex flex-col justify-center max-w-[249px] md:max-w-[400px] md:text-left text-center relative">
@@ -319,88 +260,85 @@
                     </div>
                 </div>
 
-                <button id="prevDesktop"
-                    class="hidden md:block absolute left-6 md:left-8 top-1/2 -translate-y-1/2 z-[10] cursor-pointer hover:scale-110 transition-transform">
-                    <img src="images/homepage/desktop/chevron-left.png" alt="" class="block h-auto md:w-[110px]">
+                <button id="prevDesktop" aria-label="Sebelumnya" class="hidden md:block absolute left-8 top-1/2 -translate-y-1/2 z-[10] hover:scale-110 transition-transform">
+                    <img src="images/homepage/desktop/chevron-left.png" alt="" class="block h-auto w-[110px]">
                 </button>
-                <button id="nextDesktop"
-                    class="hidden md:block absolute right-6 md:right-8 top-1/2 -translate-y-1/2 z-[10] cursor-pointer hover:scale-110 transition-transform">
-                    <img src="images/homepage/desktop/chevron-right.png" alt="" class="block h-auto md:w-[110px]">
+                <button id="nextDesktop" aria-label="Berikutnya" class="hidden md:block absolute right-8 top-1/2 -translate-y-1/2 z-[10] hover:scale-110 transition-transform">
+                    <img src="images/homepage/desktop/chevron-right.png" alt="" class="block h-auto w-[110px]">
                 </button>
             </div>
 
             <div class="relative z-[10] flex md:hidden items-center justify-center mt-4">
-                <button id="prevTesti" class="text-[#7A3D21] text-2xl font-bold cursor-pointer">
+                <button id="prevTesti" aria-label="Sebelumnya">
                     <img src="images/homepage/desktop/chevron-left.png" alt="" class="block w-[66px] h-auto">
                 </button>
                 <div id="carouselDotsMobile" class="flex items-center gap-2"></div>
-                <button id="nextTesti" class="text-[#7A3D21] text-2xl font-bold cursor-pointer">
+                <button id="nextTesti" aria-label="Berikutnya">
                     <img src="images/homepage/desktop/chevron-right.png" alt="" class="block w-[66px] h-auto">
                 </button>
             </div>
 
-            <div id="carouselDotsDesktop" class="relative z-[10] hidden md:flex items-center justify-center gap-3 mt-6">
-            </div>
+            <div id="carouselDotsDesktop" class="relative z-[10] hidden md:flex items-center justify-center gap-3 mt-6"></div>
         </div>
     </section>
 
-    <footer class="absolute w-full h-auto py-[30px] px-[24px] md:py-[78px] md:px-[90px] gap-[10px] flex items-center justify-center overflow-hidden" style="background-image:url('images/homepage/footer/bg-footer.png'); background-size:cover; background-position:center;">
+    <!-- FOOTER -->
+    <footer class="absolute w-full h-auto py-[30px] px-[24px] md:py-[78px] md:px-[90px] flex items-center justify-center overflow-hidden bg-[url('images/homepage/footer/bg-footer.png')] bg-cover bg-center">
         <img src="images/homepage/footer/frame-footer-mobile.png" alt="" class="block md:hidden relative w-full h-full pointer-events-none">
         <img src="images/homepage/footer/frame-footer.png" alt="" class="hidden md:block relative w-full h-full pointer-events-none">
 
-        <div class="absolute z-[2] flex flex-col md:flex md:flex-row items-center justify-center gap-[14px] md:gap-[120px]">
+        <div class="absolute z-[2] flex flex-col md:flex-row items-center justify-center gap-[14px] md:gap-[120px]">
 
             <nav class="flex flex-col items-center gap-[12px]">
-                <a href="#" class="underline underline-offset-4 text-[#F9DCB4] text-[24px] font-normal tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Home</a>
-                <a href="#" class="no-underline text-[#C07E4E] text-[24px] font-normal tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Tema</a>
-                <a href="#" class="no-underline text-[#C07E4E] text-[24px] font-normal tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Materi</a>
-                <a href="#" class="no-underline text-[#C07E4E] text-[24px] font-normal tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Asik</a>
+                <a href="#" class="underline underline-offset-4 text-[#F9DCB4] text-[24px] tracking-[0.3px] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Home</a>
+                <a href="#" class="text-[#C07E4E] text-[24px] tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Tema</a>
+                <a href="#" class="text-[#C07E4E] text-[24px] tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Materi</a>
+                <a href="#" class="text-[#C07E4E] text-[24px] tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Asik</a>
             </nav>
 
-            <div class="text-center">
-                <div class="flex flex-col items-center justify-center gap-[31px] md:gap-[48px]">
-                    
-                    <div class="gap-[5px] md:gap-[10px]">
-                        <h3 class="text-[#F9DCB4] text-[18.38px] font-semibold md:text-[28px] [-webkit-text-stroke:0.5px_#f0c28a]" style="font-family:'Times New Roman',serif;">
-                            Didukung Oleh
-                        </h3>
+            <div class="flex flex-col items-center justify-center gap-[31px] md:gap-[48px] text-center">
+                <div>
+                    <h3 class="text-[#F9DCB4] text-[18.38px] font-semibold md:text-[28px] [-webkit-text-stroke:0.5px_#f0c28a]" style="font-family:'Times New Roman',serif;">
+                        Didukung Oleh
+                    </h3>
 
-                        <div class="flex items-center justify-center gap-[10.63px] md:gap-[17px]">
-                            <img src="images/homepage/footer/Group 1410136690.png" alt="" class=" w-[93px] h-[32px] md:w-[142px] md:h-[50px]">
-                            <img src="images/homepage/footer/Logo SI.png" alt="" class="w-[73px] h-[27px] md:w-[111px] md:h-[42px]">
-                            <img src="images/homepage/footer/ITS Advancing Humanity SVG.png" alt="" class="w-[50px] h-[27px] md:w-[76px] md:h-[41px]">
-                            <img src="images/homepage/footer/Group 13906.png" alt="" class="w-[70px] h-[28px] object-contain md:w-[54px] md:h-[47px]">
-                        </div>
-    
-                        <div class="flex w-full items-center justify-center gap-[10.63px] md:gap-[17px]">
-                            <img src="images/homepage/footer/Logo Kabinet.png" alt="" class="shrink-0 object-contain w-[84px] h-[25px] md:w-[128px] md:h-[39px]">
-                            <img src="images/homepage/footer/Frame 48098812.png" alt="" class="shrink-0 object-contain w-[23px] h-[32px] md:w-[43px] md:h-[48px]">
-                            <img src="images/homepage/footer/diktisaintek.png" alt="" class="shrink-0 object-contain w-[32px] h-[27px] md:w-[49px] md:h-[42px]">
-                            <img src="images/homepage/footer/Mask group.png" alt="" class="shrink-0 object-contain w-[56px] h-[33px] md:w-[86px] md:h-[50px]">
-                        </div>
+                    <div class="flex items-center justify-center gap-[10.63px] md:gap-[17px]">
+                        <img src="images/homepage/footer/Group 1410136690.png" alt="" class="w-[93px] h-[32px] md:w-[142px] md:h-[50px]">
+                        <img src="images/homepage/footer/Logo SI.png" alt="" class="w-[73px] h-[27px] md:w-[111px] md:h-[42px]">
+                        <img src="images/homepage/footer/ITS Advancing Humanity SVG.png" alt="" class="w-[50px] h-[27px] md:w-[76px] md:h-[41px]">
+                        <img src="images/homepage/footer/Group 13906.png" alt="" class="w-[70px] h-[28px] object-contain md:w-[54px] md:h-[47px]">
                     </div>
 
-                    <p class="text-[#F9DCB4] text-[13.13px] font-bold leading-[1.4] md:text-[20px]" style="font-family:'Times New Roman',serif;">
-                        © SIMETRI HMSI ITS
-                    </p>
+                    <div class="flex items-center justify-center gap-[10.63px] md:gap-[17px]">
+                        <img src="images/homepage/footer/Logo Kabinet.png" alt="" class="shrink-0 object-contain w-[84px] h-[25px] md:w-[128px] md:h-[39px]">
+                        <img src="images/homepage/footer/Frame 48098812.png" alt="" class="shrink-0 object-contain w-[23px] h-[32px] md:w-[43px] md:h-[48px]">
+                        <img src="images/homepage/footer/diktisaintek.png" alt="" class="shrink-0 object-contain w-[32px] h-[27px] md:w-[49px] md:h-[42px]">
+                        <img src="images/homepage/footer/Mask group.png" alt="" class="shrink-0 object-contain w-[56px] h-[33px] md:w-[86px] md:h-[50px]">
+                    </div>
                 </div>
+
+                <p class="text-[#F9DCB4] text-[13.13px] font-bold leading-[1.4] md:text-[20px]" style="font-family:'Times New Roman',serif;">
+                    © SIMETRI HMSI ITS
+                </p>
             </div>
         </div>
     </footer>
 
     <script>
-        const btn = document.getElementById('menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        const iconOpen = document.getElementById('icon-open');
-        const iconClose = document.getElementById('icon-close');
+        // ---- Mobile menu ----
+        const btn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
 
-        btn.addEventListener('click', () => {
-            const isOpen = !menu.classList.contains('hidden');
-            menu.classList.toggle('hidden');
-            iconOpen.classList.toggle('hidden');
-            iconClose.classList.toggle('hidden');
-            btn.setAttribute('aria-expanded', String(!isOpen));
+        btn.addEventListener("click", () => {
+            const nowOpen = menu.classList.toggle("hidden") === false;
+            document.getElementById("icon-open").classList.toggle("hidden");
+            document.getElementById("icon-close").classList.toggle("hidden");
+            btn.setAttribute("aria-expanded", String(nowOpen));
         });
+
+        const DOT = "h-[18px] rounded-full transition-all duration-300";
+        const DOT_ON = "bg-[#7A3D21] w-[47px]";
+        const DOT_OFF = "bg-[#C07E4E] w-[18px]";
 
         // ---- Documentation carousel ----
         (() => {
@@ -413,14 +351,10 @@
             const perView = () => (desktop.matches ? 2 : 1);
             const pages = () => Math.max(total - perView(), 0) + 1;
 
-            const DOT = "h-[18px] rounded-full transition-all duration-300";
-            const ON = "bg-[#7A3D21] w-[47px]";
-            const OFF = "bg-[#C07E4E] w-[18px]";
-
             function goTo(index) {
                 current = (index + pages()) % pages();
                 track.style.transform = `translateX(-${current * (100 / perView())}%)`;
-                [...dots.children].forEach((d, i) => (d.className = `${DOT} ${i === current ? ON : OFF}`));
+                [...dots.children].forEach((d, i) => (d.className = `${DOT} ${i === current ? DOT_ON : DOT_OFF}`));
             }
 
             function buildDots() {
@@ -444,39 +378,31 @@
         (() => {
             const track = document.getElementById("tracks");
             const total = track.children.length;
+            const dotBoxes = [document.getElementById("carouselDotsMobile"), document.getElementById("carouselDotsDesktop")];
             let current = 0;
-
-            // Mobile and desktop each have their own dot container and sizes
-            const dotSets = [
-                { el: document.getElementById("carouselDotsMobile"), base: "h-[18px] rounded-full transition-all", on: "bg-[#7A3D21] w-[47px]", off: "bg-[#C07E4E] w-[18px]" },
-                { el: document.getElementById("carouselDotsDesktop"), base: "h-[18px] rounded-full transition-all", on: "bg-[#7A3D21] w-[47px]", off: "bg-[#C07E4E] w-[18px]" },
-            ];
 
             function goTo(index) {
                 current = (index + total) % total;
                 track.style.transform = `translateX(-${current * 100}%)`;
-                dotSets.forEach(({ el, base, on, off }) =>
-                    [...el.children].forEach((d, i) => (d.className = `${base} ${i === current ? on : off}`))
+                dotBoxes.forEach((box) =>
+                    [...box.children].forEach((d, i) => (d.className = `${DOT} ${i === current ? DOT_ON : DOT_OFF}`))
                 );
             }
 
-            dotSets.forEach(({ el }) => {
+            dotBoxes.forEach((box) => {
                 for (let i = 0; i < total; i++) {
                     const d = document.createElement("button");
                     d.setAttribute("aria-label", `Slide ${i + 1}`);
                     d.addEventListener("click", () => goTo(i));
-                    el.appendChild(d);
+                    box.appendChild(d);
                 }
             });
 
-            document.getElementById("prevTesti").addEventListener("click", () => goTo(current - 1));
-            document.getElementById("nextTesti").addEventListener("click", () => goTo(current + 1));
-            document.getElementById("prevDesktop").addEventListener("click", () => goTo(current - 1));
-            document.getElementById("nextDesktop").addEventListener("click", () => goTo(current + 1));
+            ["prevTesti", "prevDesktop"].forEach((id) => document.getElementById(id).addEventListener("click", () => goTo(current - 1)));
+            ["nextTesti", "nextDesktop"].forEach((id) => document.getElementById(id).addEventListener("click", () => goTo(current + 1)));
 
             goTo(0);
         })();
     </script>
 </body>
-
 </html>
